@@ -80,9 +80,9 @@ const translations = {
       title: 'Our Specialists',
       specialty: 'Obstetrics & Gynecology',
       specialists: {
-        yehia: 'Dr. Yehia El-Rakhawy',
-        sherif: 'Dr. Sherif Azmy',
-        helmy: 'Dr. Ahmed Helmy'
+        yehia: 'Dr. Mohamed Yehia',
+        sherif: 'Dr. Sherif Yehia',
+        helmy: 'Dr. Amr Helmy'
       }
     },
     patientInfo: {
