@@ -229,9 +229,9 @@ const translations = {
       title: 'المتخصصون لدينا',
       specialty: 'النساء والتوليد',
       specialists: {
-        yehia: 'د. يحيى الرخاوي',
-        sherif: 'د. شريف عزمي',
-        helmy: 'د. أحمد حلمي'
+        yehia: 'د. محمد يحيى ',
+        sherif: 'د. شريف يحيى',
+        helmy: 'د. عمرو حلمي'
       }
     },
     patientInfo: {
