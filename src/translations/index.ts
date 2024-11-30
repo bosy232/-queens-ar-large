@@ -9,7 +9,8 @@ const translations = {
       doctors: 'Doctors',
       patientInfo: 'Patient Info',
       contact: 'Contact',
-      emergency: 'Emergency'
+      emergency: 'Emergency',
+      toggleLanguage: 'Switch to Arabic'
     },
     hero: {
       title: 'Exceptional Care, Personalized for You',
@@ -158,27 +159,28 @@ const translations = {
       doctors: 'الأطباء',
       patientInfo: 'معلومات المرضى',
       contact: 'اتصل بنا',
-      emergency: 'الطوارئ'
+      emergency: 'الطوارئ',
+      toggleLanguage: 'التحويل للإنجليزية'
     },
     hero: {
-      title: 'رعاية استثنائية، مخصصة لك',
+      title: 'رعاية استثنائية مخصصة لك',
       subtitle: 'رعاية طبية متقدمة بلمسة إنسانية',
-      bookAppointment: 'احجز موعد',
+      bookAppointment: 'احجز موعداً',
       ourServices: 'خدماتنا'
     },
     features: {
       title: 'لماذا تختارنا',
       emergency: {
-        title: 'رعاية طوارئ 24/7',
-        description: 'خدمات طوارئ على مدار الساعة مع طاقم متخصص جاهز لتقديم العناية الطبية الفورية.'
+        title: 'رعاية طوارئ على مدار الساعة',
+        description: 'خدمات طوارئ متاحة ٢٤ ساعة مع فريق طبي متخصص جاهز لتقديم الرعاية الطبية الفورية'
       },
       technology: {
-        title: 'تكنولوجيا متقدمة',
-        description: 'أحدث المعدات والمرافق الطبية لضمان التشخيص الدقيق والعلاج الفعال.'
+        title: 'تقنيات متطورة',
+        description: 'أحدث المعدات والمرافق الطبية لضمان التشخيص الدقيق والعلاج الفعال'
       },
       team: {
-        title: 'فريق طبي متخصص',
-        description: 'أطباء ومتخصصون مؤهلون تأهيلاً عالياً ملتزمون بتقديم رعاية استثنائية للمرضى.'
+        title: 'فريق طبي متميز',
+        description: 'أطباء ومتخصصون مؤهلون تأهيلاً عالياً ملتزمون بتقديم رعاية استثنائية للمرضى'
       }
     },
     about: {
@@ -223,7 +225,7 @@ const translations = {
       obstetrics: 'النساء والتوليد',
       pediatrics: 'طب الأطفال وحديثي الولادة',
       surgery: 'الجراحة العامة',
-      emergency: 'طوارئ 24/7'
+      emergency: 'طوارئ ٢٤/٧'
     },
     doctors: {
       title: 'المتخصصون لدينا',
@@ -240,24 +242,24 @@ const translations = {
         title: 'التأمين والدفع',
         providers: 'شركات التأمين المعتمدة',
         payment: 'خيارات الدفع',
-        paymentDesc: 'نقبل وسائل دفع متنوعة تشمل النقد والبطاقات الائتمانية والتغطية التأمينية.'
+        paymentDesc: 'نقبل وسائل دفع متنوعة تشمل النقد والبطاقات الائتمانية والتغطية التأمينية'
       },
       guidelines: {
         title: 'إرشادات المستشفى',
         visiting: 'مواعيد الزيارة',
         visitingHours: {
-          general: 'الأقسام العامة: 10:00 صباحاً - 8:00 مساءً',
-          icu: 'العناية المركزة: 11:00 صباحاً - 12:00 ظهراً & 5:00 مساءً - 6:00 مساءً'
+          general: 'الأقسام العامة: ١٠:٠٠ صباحاً - ٨:٠٠ مساءً',
+          icu: 'العناية المركزة: ١١:٠٠ صباحاً - ١٢:٠٠ ظهراً & ٥:٠٠ مساءً - ٦:٠٠ مساءً'
         },
         contacts: 'أرقام مهمة'
       }
     },
     appointment: {
-      title: 'احجز موعد',
+      title: 'احجز موعداً',
       subtitle: 'احجز زيارتك مع متخصصينا',
       features: {
         scheduling: 'حجز سهل عبر الإنترنت',
-        support: 'دعم متاح 24/7',
+        support: 'دعم متاح ٢٤/٧',
         specialist: 'اختر متخصصك'
       },
       form: {
@@ -265,7 +267,7 @@ const translations = {
         email: 'البريد الإلكتروني',
         phone: 'رقم الهاتف',
         date: 'التاريخ المفضل',
-        submit: 'احجز موعد'
+        submit: 'تأكيد الحجز'
       }
     },
     contact: {
@@ -275,19 +277,19 @@ const translations = {
       phone: 'رقم الهاتف',
       email: 'البريد الإلكتروني',
       workingHours: 'ساعات العمل',
-      emergencyServices: 'خدمات الطوارئ متاحة 24/7',
-      regularHours: 'الساعات العادية: 8:00 صباحاً - 8:00 مساءً',
+      emergencyServices: 'خدمات الطوارئ متاحة ٢٤/٧',
+      regularHours: 'الساعات العادية: ٨:٠٠ صباحاً - ٨:٠٠ مساءً',
       form: {
         name: 'الاسم',
         email: 'البريد الإلكتروني',
         subject: 'الموضوع',
         message: 'الرسالة',
-        send: 'إرسال الرسالة',
+        send: 'إرسال',
         placeholders: {
           name: 'أدخل اسمك',
           email: 'أدخل بريدك الإلكتروني',
           subject: 'أدخل الموضوع',
-          message: 'أدخل رسالتك'
+          message: 'اكتب رسالتك'
         }
       }
     },
@@ -296,7 +298,7 @@ const translations = {
       quickLinks: 'روابط سريعة',
       contactInfo: 'معلومات الاتصال',
       followUs: 'تابعنا',
-      rights: '© 2024 مستشفى كوينز رويال. جميع الحقوق محفوظة.'
+      rights: '© ٢٠٢٤ مستشفى كوينز رويال. جميع الحقوق محفوظة.'
     }
   }
 };

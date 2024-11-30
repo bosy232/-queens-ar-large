@@ -1,11 +1,12 @@
-import { Menu, X, Phone, Languages } from 'lucide-react';
+import { Menu, X, Phone } from 'lucide-react';
 import { useState } from 'react';
 import { useLanguage } from '../contexts/LanguageContext';
 import { useTranslation } from '../translations';
+import LanguageToggle from './LanguageToggle';
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
-  const { isArabic, toggleLanguage } = useLanguage();
+  const { isArabic } = useLanguage();
   const t = useTranslation(isArabic);
 
   const menuItems = [
@@ -38,14 +39,7 @@ export default function Navbar() {
                 {item.title}
               </a>
             ))}
-            <button
-              onClick={toggleLanguage}
-              className="flex items-center text-gray-700 hover:text-primary transition-colors"
-              aria-label="Toggle language"
-            >
-              <Languages className="w-5 h-5 mr-1" />
-              {isArabic ? 'English' : 'عربي'}
-            </button>
+            <LanguageToggle />
             <a
               href="tel:15679"
               className="flex items-center bg-primary text-white px-4 py-2 rounded-md hover:bg-primary-dark transition-colors"
@@ -57,13 +51,7 @@ export default function Navbar() {
 
           {/* Mobile Menu Button */}
           <div className="md:hidden flex items-center space-x-4">
-            <button
-              onClick={toggleLanguage}
-              className="text-gray-700 hover:text-primary transition-colors"
-              aria-label="Toggle language"
-            >
-              <Languages className="w-5 h-5" />
-            </button>
+            <LanguageToggle />
             <button
               onClick={() => setIsOpen(!isOpen)}
               className="text-gray-700 hover:text-primary"

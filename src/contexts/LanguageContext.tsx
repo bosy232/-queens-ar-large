@@ -1,4 +1,5 @@
-import { createContext, useContext, useState, type ReactNode } from 'react';
+import { createContext, useContext, useState, useEffect, type ReactNode } from 'react';
+import { getBrowserLanguage, setDocumentLanguage } from '../utils/language';
 
 type LanguageContextType = {
   isArabic: boolean;
@@ -8,12 +9,17 @@ type LanguageContextType = {
 const LanguageContext = createContext<LanguageContextType | undefined>(undefined);
 
 export function LanguageProvider({ children }: { children: ReactNode }) {
-  const [isArabic, setIsArabic] = useState(false);
+  const [isArabic, setIsArabic] = useState(() => {
+    const browserLang = getBrowserLanguage();
+    return browserLang === 'ar';
+  });
+
+  useEffect(() => {
+    setDocumentLanguage(isArabic);
+  }, [isArabic]);
 
   const toggleLanguage = () => {
     setIsArabic((prev) => !prev);
-    document.documentElement.dir = !isArabic ? 'rtl' : 'ltr';
-    document.documentElement.lang = !isArabic ? 'ar' : 'en';
   };
 
   return (
